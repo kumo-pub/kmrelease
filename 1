@@ -1,0 +1,110 @@
+.
+├── 1
+├── baseline.json
+├── componts
+│   ├── server-a
+│   │   ├── server-a-1-3-1-linux-amd64.manifest.json
+│   │   ├── server-a-1-3-1-linux-amd64.tar.gz
+│   │   ├── server-a-1-3-6-linux-amd64.manifest.json
+│   │   ├── server-a-1-3-6-linux-amd64.tar.gz
+│   │   ├── server-a-2-3-6-linux-amd64.manifest.json
+│   │   └── server-a-2-3-6-linux-amd64.tar.gz
+│   ├── server-b
+│   │   ├── server-b-1-3-1-linux-amd64.manifest.json
+│   │   └── server-b-1-3-1-linux-amd64.tar.gz
+│   └── server-c
+│       ├── server-c-1-3-1-linux-amd64.manifest.json
+│       └── server-c-1-3-1-linux-amd64.tar.gz
+├── index.json
+├── LICENSE
+├── README.md
+└── versions
+    ├── a-
+    └── s-
+        ├── server-a.json
+        ├── server-b.json
+        └── server-c.json
+
+7 directories, 18 files
+
+index.json:
+
+{
+    "timestamp": "2025-11-17T13:16:56+08:00",
+    "components": [
+        {
+            "name": "server-a",
+            "owner": "ggole",
+            "description": "nlp server",
+            "email": "ggole@gmail.com",
+            "source": "github.com/ggole/server-a",
+            "home": "github.com/ggole/server-a",
+            "docs": "github.com/ggole/server-a"
+        },
+        {
+            "name": "server-b",
+            "owner": "ggole",
+            "description": "nlp server",
+            "email": "ggole@gmail.com",
+            "source": "github.com/ggole/server-b",
+            "home": "github.com/ggole/server-b",
+            "docs": "github.com/ggole/server-b"
+        },
+        {
+            "name": "server-c",
+            "owner": "ggole",
+            "description": "nlp server",
+            "email": "ggole@gmail.com",
+            "source": "github.com/ggole/server-c",
+            "home": "github.com/ggole/server-c",
+            "docs": "github.com/ggole/server-c"
+        }
+    ]
+}
+
+baseline.json:
+{
+    "version": "1.3.4",
+    "timestamp": "2025-11-17T13:16:56+08:00",
+    "defaults": {
+        "server-a": {
+            "baseline": "3.11.2",
+            "channel": "stable"
+        },
+         "server-b": {
+            "baseline": "2.13.6",
+            "channel": "nightly"
+        },
+        "server-c": {
+            "baseline": "2.13.6",
+            "channel": "beta"
+        }
+    }
+}
+
+server-a.json:
+{
+  "versions": [
+    {
+      "git-tree": "181bb1c243122a292eef7567aa94476888b38465",
+      "version": "2.3.6",
+      "binary":"components/server-a/server-a-2-3-6-linux-amd64.tar.gz",
+      "manifest":"components/server-a/server-a-2-3-6-linux-amd64-manifest.json",
+      "channel": "stable"
+    },
+    {
+      "git-tree": "181bb1c243122a292eef7567aa94476888b38465",
+      "version": "1.3.6",
+      "binary":"components/server-a/server-a-1-3-6-linux-amd64.tar.gz",
+      "manifest":"components/server-a/server-a-1-3-6-linux-amd64-manifest.json",
+      "channel": "nightly"
+    },
+    {
+      "git-tree": "181bb1c243122a292eef7567aa94476888b18465",
+      "version": "1.3.1",
+      "binary":"components/server-a/server-a-1-3-1-linux-amd64.tar.gz",
+      "manifest":"components/server-a/server-a-1-3-1-linux-amd64-manifest.json",
+      "channel": "beta"
+    }
+  ]
+}

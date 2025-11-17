@@ -1,0 +1,32 @@
+{
+    "timestamp": "2025-11-17T13:16:56+08:00",
+    "components": [
+        {
+            "name": "server-a",
+            "owner": "ggole",
+            "description": "nlp server",
+            "email": "ggole@gmail.com",
+            "source": "github.com/ggole/server-a",
+            "home": "github.com/ggole/server-a",
+            "docs": "github.com/ggole/server-a"
+        },
+        {
+            "name": "server-b",
+            "owner": "ggole",
+            "description": "nlp server",
+            "email": "ggole@gmail.com",
+            "source": "github.com/ggole/server-b",
+            "home": "github.com/ggole/server-b",
+            "docs": "github.com/ggole/server-b"
+        },
+        {
+            "name": "server-c",
+            "owner": "ggole",
+            "description": "nlp server",
+            "email": "ggole@gmail.com",
+            "source": "github.com/ggole/server-c",
+            "home": "github.com/ggole/server-c",
+            "docs": "github.com/ggole/server-c"
+        }
+    ]
+}
